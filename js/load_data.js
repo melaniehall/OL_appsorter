@@ -41,7 +41,6 @@ var allTags = new Array();
 				$(".btn-add-tag").click(function(){
 					var index = $(this).data("id");
 					var input = $("input[data-id='" + index + "']")
-					alert(input.val());
 					var appId = appArray[index].id;
 					var tagArray = appArray[index].tags + ", " + input.val(); 
 
@@ -113,7 +112,6 @@ jQuery.each(allTags, function(){
 
 			$(".tag").click(function(){
 				var tagName = $(this).attr("name");
-				alert(tagName);
 				filterByTag(tagName);
 			})//end Click
 
@@ -169,7 +167,6 @@ function listTags(){
 
 $(".tag").click(function(){
 	var tagName = $(this).attr("name");
-	alert(tagName);
 	filterByTag(tagName);
 
 })//end Click
@@ -218,7 +215,7 @@ function filterByTag(tagName){
 		$(".btn-add-tag").click(function(){
 					var index = $(this).data("id");
 					var input = $("input[data-id='" + index + "']")
-					alert(input.val());
+					
 					var appId = appArray[index].id;
 					var tagArray = appArray[index].tags + ", " + input.val(); 
 
@@ -297,7 +294,6 @@ function chooseGenre(data){
 $(".btn-add-tag").click(function(){
 					var index = $(this).data("id");
 					var input = $("input[data-id='" + index + "']")
-					alert(input.val());
 					var appId = appArray[index].id;
 					var tagArray = appArray[index].tags + ", " + input.val(); 
 
