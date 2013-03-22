@@ -2,14 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>OL App Sorter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-tagmanager.css" rel="stylesheet">
+<!--     <link href="css/bootstrap-tagmanager.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">
+    <link href="css/jquery.tagit.css" rel="stylesheet" type="text/css">
 
     <style type="text/css">
       body {
@@ -99,9 +101,11 @@
                         <button class="btn" type="submit" name="submit">Submit</button>
                       </form> -->
                       <li class="nav-header">Filter by Tags</li>
-                      <li><a href="#nav">Nav</a></li>
-                      <li><a href="#layout">Layout</a></li>
-                      <li><a href="#button">Button</a></li>
+                    </ul>
+                    <ul class="nav nav-list tag-list-sidebar">
+                      <li><a class="tag" name="map" href="#app-view">Map</a></li>
+                      <li><a class="tag" name="typeface" value="typeface" href="#typeface">Typeface</a></li>
+                      <li><a class="tag" name="metallic" value="metallic" href="#metallic">Metallic</a></li>
                     </ul>
                   </div><!--/.well -->
                 </div><!--/span-->
@@ -113,7 +117,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Arsenal 2013</p>
+<!--         <p>&copy; Copyright</p> -->
       </footer>
 </div> <!-- /app-view -->
 
@@ -125,7 +129,10 @@
 
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap-tagmanager.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/tag-it.js" type="text/javascript" charset="utf-8"></script>
+
+<!--     // <script src="js/bootstrap-tagmanager.js"></script> -->
 
     <script src="js/load_data.js"></script>
 
