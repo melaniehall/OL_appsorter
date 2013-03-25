@@ -30,7 +30,7 @@ var allComments = new Array();
 			removeEmptyImages();
 			var appId = data[i].id
 			
-			addCommentKey(appId);
+			// addCommentKey(appId);
 			// addTagKey(appId);
 
 
@@ -50,6 +50,7 @@ var allComments = new Array();
 
 					});
      				}, 
+     			postComment()
 
 			      error: function(data){
 			        alert("errors on GET");
