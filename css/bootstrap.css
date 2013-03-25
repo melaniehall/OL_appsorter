@@ -210,7 +210,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #FFF;
+  background-color: #e6e6e6;
 }
 a {
   color: #0088cc;
@@ -4494,7 +4494,7 @@ a.thumbnail:focus {
   font-weight: 200;
   line-height: 30px;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #FFF;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -5056,8 +5056,9 @@ a.thumbnail:focus {
   margin-bottom: 20px;
 }
 .accordion-group {
+  margin-top: 10px;
   margin-bottom: 2px;
-  border: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -5074,7 +5075,7 @@ a.thumbnail:focus {
 }
 .accordion-inner {
   padding: 9px 15px;
-  border-top: 1px solid #e5e5e5;
+/*  border-top: 1px solid #e5e5e5;*/
 }
 .carousel {
   position: relative;

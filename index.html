@@ -9,9 +9,6 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-<!--     <link href="css/bootstrap-tagmanager.css" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">
-    <link href="css/jquery.tagit.css" rel="stylesheet" type="text/css">
 
     <style type="text/css">
       body {
@@ -59,7 +56,7 @@
           <a class="brand" href="#">App Sorter</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
-              Logged in as <a href="#" class="navbar-link">Username</a>
+               <a href="#" class="navbar-link">One Life International</a>
             </p>
             <ul class="nav">
               <li class="active"><a href="https://appsorter-z5agt.backliftapp.com/">Home</a></li>
@@ -73,6 +70,7 @@
     <div class="container-fluid">
 <p>Designing an App? Need Inspiration? Filter through iTunes Database! </p>
 <div id="category-name"></div>
+
 <label>Sort by Genre</label><select id="selectGenre">
   <option value="All">All</option>
 </select>
@@ -81,34 +79,29 @@
       <div class="row-fluid">
         
         <div class="span10">
-          <div id="app-view">
-          </div>
-           <!--  <div class="app-toggle"> //sample App entry
-              <h3></h3>
-              <p>Genre:   | <input type="text" name="tags" placeholder="Tags" class="tagManager"/></p>
-              <img src="http://a5.mzstatic.com/us/r1000/087/Purple/v4/81/03/37/81033746-98a4-83c1-c72f-777c5f287359/mzl.ahdeqnxq.320x480-75.jpg" width="22%">
-              <img src="http://a5.mzstatic.com/us/r1000/062/Purple/v4/45/73/a1/4573a1a8-f473-849c-858d-72e795d4119f/mzl.mnplnmoz.320x480-75.jpg" width="22%">
-              <img src="http://a4.mzstatic.com/us/r1000/091/Purple/v4/5e/4f/8b/5e4f8baf-80ad-5395-4bda-94783e435775/mzl.vuejkhbm.320x480-75.jpg" width="22%">
-              <img src="http://a1.mzstatic.com/us/r1000/067/Purple/v4/62/8a/bd/628abd6d-badb-0131-2818-96526e5cdb5b/mzl.yzzynzcw.320x480-75.jpg" width="22%">
-            </div><!--/app-toggle-->
+            <!-- THIS IS WHERE ALL THE APPS ARE APPENDED -->
+            <div id="app-view">
+            </div>
         </div> <!--/span  -->
+        
+
         <div class="span2">
-                  <div class="well sidebar-nav">
-                    <ul class="nav nav-list">
-                      <li class="nav-header">Search</li>
-                      <form>
-<!--                         <input type="text" name="search" class="span12"/>
-                        <button class="btn" type="submit" name="submit">Submit</button>
-                      </form> -->
-                      <li class="nav-header">Filter by Tags</li>
-                    </ul>
-                    <ul class="nav nav-list tag-list-sidebar">
-                      <li><a class="tag" name="map" href="#app-view">Map</a></li>
-                      <li><a class="tag" name="typeface" value="typeface" href="#typeface">Typeface</a></li>
-                      <li><a class="tag" name="metallic" value="metallic" href="#metallic">Metallic</a></li>
-                    </ul>
-                  </div><!--/.well -->
-                </div><!--/span-->
+            <div class="well sidebar-nav">
+              <ul class="nav nav-list">
+                <li class="nav-header">Search</li>
+                  <form>
+                      <input type="text" name="search" class="span12"/>
+                      <button class="btn" type="submit" name="submit">Submit</button>
+                  </form>
+                <li class="nav-header">Filter by Tags</li>
+              </ul>
+              <ul class="nav nav-list tag-list-sidebar">
+                <li><a class="tag" name="map" href="#app-view">Map</a></li>
+                <li><a class="tag" name="typeface" value="typeface" href="#typeface">Typeface</a></li>
+                <li><a class="tag" name="metallic" value="metallic" href="#metallic">Metallic</a></li>
+              </ul>
+            </div><!--/.well -->
+          </div><!--/span-->
 
        </div> <!--/row -->         
 
@@ -129,12 +122,11 @@
 
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/tag-it.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/load_data.js"></script>
+ 
 
 <!--     // <script src="js/bootstrap-tagmanager.js"></script> -->
 
-    <script src="js/load_data.js"></script>
 
   </body>
 </html>
