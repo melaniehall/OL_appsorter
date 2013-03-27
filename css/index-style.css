@@ -1,0 +1,213 @@
+.brand{
+	background-image: url("appsorte.png");
+}
+
+.appsorte{
+	z-index: 1000;
+	margin-top: -5px
+}
+
+.label2{
+	font-weight: bold;
+}
+
+.app-toggle .tag{
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 15px;
+  line-height: 14px;
+  color: red;
+  margin-right: 5px;
+  padding: 5px;
+  background-color: #eeeeee;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+
+}
+
+.tag{
+color: red;	
+}
+
+.tag:hover{
+color: red;	
+background-color: #eee;
+}
+
+.app-toggle{
+	border: 5px solid #F2F2F2;
+	box-shadow: 0px 0px 10px #AAA;
+}
+
+.app-toggle h2, .app-toggle h3, .app-toggle h4{
+	margin-bottom: 3px;
+	padding: 5px 10px 0px 10px;
+}
+
+
+
+.app-toggle img:first-of-type, .app-toggle input{
+	margin-left: 10px;
+} 
+.app-toggle p:first-of-type{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #a6a6a6;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 0px 10px 10px 10px;
+}
+
+.accordion a {
+  display: block;
+  padding: 20px -20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+
+}
+
+.btn-add-tag, .btn-postcomment{
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  margin-left: 10px;
+  background-color: red;
+/*  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);*/
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: red;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+
+}
+
+.btn-postcomment{
+	float:right;
+}
+
+.tag-container{
+	margin-left: 10px;
+	margin-top: 10px;
+
+}
+
+.postscript{
+	margin-top: 20px;
+	font-size: 13px;
+	color: #999999;
+}
+
+.comment-area{
+	color: #a6a6a6;
+}
+
+.comment-area p:first-of-type{
+	margin-top: 20px;
+	font-size: 17px;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	text-transform: none;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.comment-area p{
+	font-size: 14px;
+	text-transform: none;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	font-weight: normal;
+}
+
+.comment-instructions{
+	font-size: 11px;
+	text-transform: none;
+	margin-bottom: 0px;
+}
+
+.float-right{
+	float: right;
+	clear: both;
+}
+/*IF I WANT THE SIDEBAR TO BE FIXED POSITION*/
+/*.position-fixed{
+	position: fixed;
+}*/
+
+.sidebar-left{
+}
+
+.accordion-toggle{
+}
+
+.app-header{
+	background: #eeeeee;
+	margin-bottom: 30px;
+}
+
+.tag-list-sidebar{
+	margin-bottom: 40px;
+}
+
+
+/*ABOUT PAGE*/
+
+.header-slide{
+background-color: #E0351B;
+background-image: url("img/iphone_03.png");
+width: 100%; 
+}
+
+.about-image{
+	background-color: #E0351B; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width:100%;
+	margin-top: -20px;
+	z-index: -200;
+}
+
+.about-image h1{
+	color: #FFF;
+	font-size: 60px; 
+	line-height: 70px;
+	padding-top: 80px;
+
+}
+.about-image p{
+	color: #eee;
+	font-size: 20px; 
+
+}
+
+.header-slide img{
+	margin-top: 30px;
+	float:right;
+}
+
+.feature {
+	text-align: left;
+	padding: 60px;
+	background-color: #FFF;
+}
+
+.feature h2{
+	text-align: left;
+	padding: 0px;
+}
+
+.footnote{
+	font-size: 12px;
+	font-style: italic;
+}
+

@@ -10,6 +10,11 @@
 .clearfix {
   *zoom: 1;
 }
+
+a.brand{
+  background-image: url("img/appsorte.png");
+}
+
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -210,8 +215,9 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #e6e6e6;
+  background-color: #e3e3e3;
 }
+
 a {
   color: #0088cc;
   text-decoration: none;
@@ -1340,7 +1346,7 @@ input[type="file"] {
   line-height: 30px;
 }
 select {
-  width: 220px;
+  width: 100%;
   border: 1px solid #cccccc;
   background-color: #ffffff;
 }
@@ -3497,6 +3503,10 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand:focus {
   text-decoration: none;
 }
+
+.brand {
+  backgound-image: url('img/appsorte.png');
+}
 .navbar-text {
   margin-bottom: 0;
   line-height: 40px;
@@ -4487,8 +4497,7 @@ a.thumbnail:focus {
 
 /*APP VIEW*/
 .app-toggle {
-  padding: 20px;
-  padding-top: 5px;
+
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 200;
@@ -4499,6 +4508,7 @@ a.thumbnail:focus {
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
+
 .app-toggle h1 {
   margin-bottom: 0;
   font-size: 60px;
@@ -4509,6 +4519,8 @@ a.thumbnail:focus {
 .app-toggle li {
   line-height: 30px;
 }
+
+.app-toggle h2{}
 
 .app-toggle img {
   margin-right: 10px;
@@ -6349,3 +6361,4 @@ button.close {
     overflow: visible !important;
   }
 }
+
