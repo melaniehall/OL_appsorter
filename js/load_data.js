@@ -187,12 +187,7 @@ $(".tag-container").html("")
 jQuery.each(allTags, function(){
 				$(".tag-list-sidebar").append("<li value='"+ this +"'><a class='tag' value='"+ this +"' name='" + this + "' href='#topofpage'>"+ this + "</a></li>");
 });
-	// $.ajax({
- //      url: '/backliftapp/apps',
- //      type: "GET",
- //      dataType: 'json',
- //      success: function(data) {
- //      	appArray = data;
+
 		for (i=0; i < appArray.length; i++){
 			var tagString = appArray[i].tags;
 			var tagArray = tagString.split(", ");
@@ -210,9 +205,6 @@ jQuery.each(allTags, function(){
 				filterByTag(tagName);
 				removeEmptyImages()
 			})//end Click
-
-// 	} //end success
-// }); //end ajax
 };//end appendTags;
 
 // Call Only on Initial Load of Apps OR to RESET tags
@@ -269,17 +261,9 @@ $(".tag").click(function(){
 	removeEmptyImages()
 
 })//end Click
-// **************************PAGINATION*****************************************
-// function pagination(){
-//     $(".app").pagination({
-//         items: 20,
-//         itemsOnPage: 10,
-//         cssStyle: 'light-theme'
-//     });
-// };
 
 
-// **************************REMOVING FUNCTIONS*****************************************
+// **************************REMOVAL FUNCTIONS*****************************************
 
 function removeDuplicateGenres(){
 $('#selectGenre option').each(function() {
@@ -305,7 +289,7 @@ function filterByTag(tagName){
 		$("#app-view").html(" ");
 		var tag = tagName;
 
-// Set Category Name
+	// Set Category Name
 		if(tag === "all"){
 		$("#category-name").html('<h2> Browse All Apps </h2>')
 		}
@@ -322,16 +306,16 @@ function filterByTag(tagName){
 			if (patt1.test(appArray[i].tags) === true){
 				if (appArray[i].ScreenshotUrl1 === undefined && appArray[i].IpadScreenshotUrl1 !== undefined){
 					$("#app-view").append('<div class="row-fluid app"><div class="span12"><div class="app-toggle"><div class="app-header span12"><h3>' + appArray[i].Title + '</h3><p> Genre: ' + appArray[i].GenreName + '</p></div><img src="' + appArray[i].IpadScreenshotUrl1 + '" width="22%"><img src="' + appArray[i].IpadScreenshotUrl2 + '" width="22%"><img src="' + appArray[i].IpadScreenshotUrl3 + '" width="22%"><img src="' + appArray[i].IpadScreenshotUrl4 + '" width="22%"><br/><input class="tag-input" data-id="'+ i + '"><button class="btn-add-tag" data-id="' + i + '">Add Tag</button><div class="tag-container" data-id="' + i + '"></div><p class="postscript">These Screenshots are for the iPad</p><!--Begin Commenting--><div class="accordion" id="accordion-'+ i +'"><div class="accordion-group"><div class="accordion-heading" data-id="' + i + '"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-' + i + '" href="#collapse'+ i + '">&raquo; Comments</a></div><div id="collapse'+ i + '" class="accordion-body collapse"><div class="accordion-inner"><p class="comment-instructions">Let us know your thoughts about the look and feel of this app:</p><textarea class="span12" rows="4" cols="50" data-id="comments-' + i + '"></textarea><button class="btn-postcomment" class="btn-postcomment" type="submit" data-id="' + i + '">Post Comment</button><div class="comment-area" data-id="'+ i +'"></div></div></div></div></div><!--End Commenting--></div><!--/app-toggle--></div></div> <!--/span--></div> <!--/row -->');
-					}
+				}
 					
-					else if (appArray[i].ScreenshotUrl1 != ""){
+				else if (appArray[i].ScreenshotUrl1 != ""){
 					$("#app-view").append('<div class="row-fluid app"><div class="span12"><div class="app-toggle"><div class="app-header span12"><h3>' + appArray[i].Title + '</h3><p> Genre: ' + appArray[i].GenreName + '</p></div><img src="' + appArray[i].ScreenshotUrl1 + '" width="22%"><img src="' + appArray[i].ScreenshotUrl2 + '" width="22%"><img src="' + appArray[i].ScreenshotUrl3 + '" width="22%"><img src="' + appArray[i].ScreenshotUrl4 + '" width="22%"><br/><input class="tag-input" data-id="'+ i + '"><button class="btn-add-tag" data-id="' + i + '">Add Tag</button><div class="tag-container" data-id="' + i + '"></div><p class="postscript">These Screenshots are for the iPad</p><!--Begin Commenting--><div class="accordion" id="accordion-'+ i +'"><div class="accordion-group"><div class="accordion-heading" data-id="' + i + '"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-' + i + '" href="#collapse'+ i + '">&raquo; Comments</a></div><div id="collapse'+ i + '" class="accordion-body collapse"><div class="accordion-inner"><p class="comment-instructions">Let us know your thoughts about the look and feel of this app:</p><textarea class="span12" rows="4" cols="50" data-id="comments-' + i + '"></textarea><button class="btn-postcomment" class="btn-postcomment" type="submit" data-id="' + i + '">Post Comment</button><div class="comment-area" data-id="'+ i +'"></div></div></div></div></div><!--End Commenting--></div><!--/app-toggle--></div></div> <!--/span--></div> <!--/row -->');
-					}
+				}
 
 			} //end if
 
-		}; //end for
-		// removeEmptyImages();
+		}; //end for loop
+		removeEmptyImages();
 		chooseGenre(appArray);
 		postComment();
 		appendTags();
@@ -403,16 +387,16 @@ function chooseGenre(data){
 		    containerID : "app-view"
 		});
 
-$(".btn-add-tag").click(function(){
-					var index = $(this).data("id");
-					var input = $("input[data-id='" + index + "']")
-					var appId = appArray[index].id;
-					var tagArray = appArray[index].tags + ", " + input.val(); 
+		$(".btn-add-tag").click(function(){
+			var index = $(this).data("id");
+			var input = $("input[data-id='" + index + "']")
+			var appId = appArray[index].id;
+			var tagArray = appArray[index].tags + ", " + input.val(); 
 
-					postTag(appId, tagArray);
-					appendTags();
+			postTag(appId, tagArray);
+			appendTags();
 
-				});
+		});
 
 	}); //end change
 };//end choose
